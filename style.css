@@ -11,9 +11,13 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center;
-    padding:20px;
-    
+    align-items:flex-start;
+    padding:40px 20px;
+    background:linear-gradient(
+        135deg,
+        #74b9ff,
+        #81ecec
+    );
 }
 
 @keyframes gradientBG{
@@ -48,16 +52,12 @@ body::after{
 
 .card{
     width:100%;
-    max-width:550px;
+    max-width:600px;
+    background:white;
+    color:#333;
     padding:35px;
     border-radius:25px;
-    backdrop-filter:blur(20px);
-    background:rgba(255,255,255,0.15);
-    border:1px solid rgba(255,255,255,0.25);
-    box-shadow:0 15px 35px rgba(0,0,0,0.2);
-    color:white;
-    position:relative;
-    z-index:1;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
 
 h1{
@@ -116,23 +116,18 @@ button{
 }
 
 .calculate-btn{
-    background:white;
-    color:#5f27cd;
+    background:#6c5ce7;
+    color:white;
+    font-size:18px;
+    font-weight:600;
 }
 
 .calculate-btn:hover{
-    transform:translateY(-3px);
+    background:#5848d8;
 }
 
 .result{
     margin-top:25px;
-}
-
-.result-box{
-    background:rgba(255,255,255,0.18);
-    border-radius:15px;
-    padding:15px;
-    margin-top:10px;
 }
 
 .result-box h3{

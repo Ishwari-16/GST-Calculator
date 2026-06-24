@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>GST Calculator</h1>
+            <p class="subtitle">Calculate GST amount and total payable amount instantly.</p>
+
+            <div class="input-group">
+                <label>Amount (₹)</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+
+            <div class="input-group">
+                <label>GST Rate (%)</label>
+                <select id="gstRate">
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+                </select>
+            </div>
+
+            <button onclick="calculateGST()">Calculate GST</button>
+
+            <div class="result" id="result">
+                <h3>Result</h3>
+                <p>GST Amount: <span id="gstAmount">₹0.00</span></p>
+                <p>Total Amount: <span id="totalAmount">₹0.00</span></p>
+            </div>
+
+            <div class="developer">
+                <h3>Developer Information</h3>
+                <p><strong>Name:</strong> Ishwari Barole</p>
+                <p><strong>Email:</strong> ishwaribarole@gmail.com</p>
+            </div>
+
+            <a href="https://digitalheroesco.com" target="_blank">
+                <button class="dh-btn">Built for Digital Heroes</button>
+            </a>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
